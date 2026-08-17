@@ -61,7 +61,6 @@ PROJECT/
 
 ## Prerequisites
 
-Install these before starting:
 
 | Tool | Install | Check |
 |---|---|---|
@@ -69,11 +68,9 @@ Install these before starting:
 | Terraform | https://developer.hashicorp.com/terraform/install | `terraform --version` |
 | Git | https://git-scm.com/downloads | `git --version` |
 
-Docker is **not needed** on your machine. GitHub Actions builds and pushes images automatically.
 
 ---
 
-## Setup — Follow in Order
 
 ### 1. Configure AWS credentials
 
@@ -89,7 +86,7 @@ Enter:
 
 ---
 
-### 2. Create the Terraform backend (one time only)
+### 2. Create the Terraform backend 
 
 Terraform needs an S3 bucket and DynamoDB table to store its state. Run the bootstrap script to create them:
 
